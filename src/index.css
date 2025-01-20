@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --primary: #06b6d4;
+  --primary-dark: #0891b2;
+  --secondary: #8b5cf6;
+  --secondary-dark: #7c3aed;
+  --accent: #f472b6;
+} */
+
+:root {
+  --primary: #F7F5F2; /* Lightest color from the image */
+  --primary-dark: #577A7D; /* Darker shade of the main background color */
+  --secondary: #37666B; /* Mid-tone color */
+  --secondary-dark: #0C484B; /* Darkest color */
+  --accent: #E1A66F; /* Accent color */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-500 rounded-full hover:bg-cyan-600 transition-colors;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile menu animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
