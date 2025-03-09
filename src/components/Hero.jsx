@@ -68,6 +68,7 @@
 
 import { Github, Linkedin, Mail, Download, ArrowRight } from 'lucide-react';
 import resume from '../assets/Resume.pdf';
+import profileImage from '../assets/Sahab.jpeg';
 
 const Hero = () => {
   return (
@@ -140,7 +141,7 @@ const Hero = () => {
               {/* Profile Image */}
               <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-secondary-dark shadow-2xl">
                 <img
-                  src="src\assets\Sahab.jpeg"
+                  src={profileImage}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />

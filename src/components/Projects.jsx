@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
+import wie from '../assets/WIE.png';
+import hopeForPaws from '../assets/HopeForPaws.png';
 
 const Projects = () => {
   const projects = [
     {
       title: 'IEEE-WIE Lahore website',
       description: 'The official website for the IEEE Women in Engineering (WIE) International Summit held in Lahore, utilizing React.js for a dynamic and responsive user experience. The website serves as a comprehensive platform for attendees to access essential information about the summit, including event schedules, keynote speakers, registration details, and resources.',
-      image: 'src/assets/WIE.png',
+      image: wie,
       category: 'Web Development',
       tech: ['React', 'Node.js', 'Express', 'Tailwind CSS', 'Vite'],
       demoLink: '#',
@@ -15,7 +17,7 @@ const Projects = () => {
     {
       title: 'HopeForPaws Charity Website',
       description: 'A responsive website for animals that rescues and rehabilitates abandoned animals and shows NGOs & Clinics information where users can adopt animals and post queries related to animal health.',
-      image: 'src/assets/HopeForPaws.png',
+      image: hopeForPaws,
       category: 'Web Development',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Vite'],
       demoLink: '#',
