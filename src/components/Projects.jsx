@@ -4,20 +4,29 @@ import { Github, ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'IEEE-WIE Lahore website',
+      description: 'The official website for the IEEE Women in Engineering (WIE) International Summit held in Lahore, utilizing React.js for a dynamic and responsive user experience. The website serves as a comprehensive platform for attendees to access essential information about the summit, including event schedules, keynote speakers, registration details, and resources.',
+      image: 'src/assets/WIE.png',
+      category: 'Web Development',
+      tech: ['React', 'Node.js', 'Express', 'Tailwind CSS', 'Vite'],
+      demoLink: '#',
+      githubLink: '#'
+    },
+    {
+      title: 'HopeForPaws Charity Website',
+      description: 'A responsive website for animals that rescues and rehabilitates abandoned animals and shows NGOs & Clinics information where users can adopt animals and post queries related to animal health.',
+      image: 'src/assets/HopeForPaws.png',
+      category: 'Web Development',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'Vite'],
+      demoLink: '#',
+      githubLink: '#'
+    },
+    {
       title: 'Anime Streaming Website',
       description: 'A modern streaming platform for anime enthusiasts with a sleek user interface and real-time updates.',
       image: 'https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800',
       category: 'Web Development',
       tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-      demoLink: '#',
-      githubLink: '#'
-    },
-    {
-      title: 'E-commerce Dashboard',
-      description: 'Comprehensive admin dashboard for managing online store operations and analytics.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800',
-      category: 'Web Development',
-      tech: ['React', 'Redux', 'Material UI', 'Firebase'],
       demoLink: '#',
       githubLink: '#'
     }

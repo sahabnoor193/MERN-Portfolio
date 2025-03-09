@@ -1,21 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --primary: #06b6d4;
-  --primary-dark: #0891b2;
-  --secondary: #8b5cf6;
-  --secondary-dark: #7c3aed;
-  --accent: #f472b6;
-} */
-
 :root {
-  --primary: #F7F5F2; /* Lightest color from the image */
-  --primary-dark: #577A7D; /* Darker shade of the main background color */
-  --secondary: #37666B; /* Mid-tone color */
-  --secondary-dark: #0C484B; /* Darkest color */
-  --accent: #E1A66F; /* Accent color */
+  --primary: #37666B;
+  --primary-light: #0C484B;
+  --secondary: #577A7D;
+  --secondary-dark: #F7F5F2;
+  --accent: #E1A66F;
+}
+
+body {
+  @apply font-roboto bg-secondary-dark text-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-aleo;
 }
 
 /* Custom scrollbar */
@@ -24,11 +26,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-gray-800;
+  @apply bg-secondary-dark;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-cyan-500 rounded-full hover:bg-cyan-600 transition-colors;
+  @apply bg-primary rounded-full hover:bg-primary-light transition-colors;
 }
 
 /* Smooth scroll behavior */

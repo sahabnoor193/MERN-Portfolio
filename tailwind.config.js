@@ -26,14 +26,18 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: '#06b6d4',
-          dark: '#0891b2',
+          DEFAULT: '#37666B', // Dark teal
+          light: '#0C484B', // Light teal
         },
         secondary: {
-          DEFAULT: '#8b5cf6',
-          dark: '#7c3aed',
+          DEFAULT: '#577A7D', // Gray teal
+          dark: '#F7F5F2', // Off white
         },
-        accent: '#f472b6',
+        accent: '#E1A66F', // Golden
+      },
+      fontFamily: {
+        aleo: ['Aleo', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
       animation: {
         'gradient': 'gradient 8s linear infinite',
