@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect all paths to index.html
+      const segment = 1;
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        const newPath = location.pathname.split('/').slice(0, 1 + segment).join('/');
+        window.location.href = newPath;
+      }
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>
