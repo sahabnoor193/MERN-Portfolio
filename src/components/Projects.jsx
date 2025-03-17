@@ -11,7 +11,7 @@ const Projects = () => {
       image: wie,
       category: 'Web Development',
       tech: ['React', 'Node.js', 'Express', 'Tailwind CSS', 'Vite'],
-      demoLink: '#',
+      demoLink: 'https://ilswielahore2025.com/',
       githubLink: '#'
     },
     {
