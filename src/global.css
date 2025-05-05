@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #9A94BC; /* Lavender */
+  --color-secondary: #D4C4DD; /* Lilac */
+  --color-accent: #B784A7; /* Mauve */
+  --color-text: #4A4A4A; /* Dark gray */
+  --color-bg: #F9F7FB; /* Very pale purple */
+  --color-card: #FFFFFF;
+}
+
+.dark {
+  --color-primary: #B784A7; /* Mauve */
+  --color-secondary: #4A3E5C; /* Dark purple */
+  --color-accent: #D4C4DD; /* Lilac */
+  --color-text: #E8E8E8; /* Light gray */
+  --color-bg: #1A1423; /* Deep purple */
+  --color-card: #2A2139;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.3s ease;
+}
+
+/* Minimalist scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite alternate;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
