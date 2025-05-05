@@ -317,7 +317,7 @@ const Qualification = () => {
     {
       title: "Java Backend Intern",
       subtitle: "IATechSolutions",
-      date: "July 2024 - Present",
+      date: "July 2024 - August 2024",
       details: [
         "Developed RESTful microservices using Spring Boot for an e-commerce platform",
         "Integrated PostgreSQL database with JPA/Hibernate for seamless data persistence",
