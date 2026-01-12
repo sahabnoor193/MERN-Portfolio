@@ -250,7 +250,7 @@ const TimelineItem = ({ title, subtitle, date, details, icon, color, isLast }) =
 
   return (
     <motion.div 
-      className={`relative pl-10 pb-8 ${!isLast ? 'border-l-2 border-[var(--color-primary)]/20' : ''}`}
+      className={`relative pl-10 pb-4 ${!isLast ? 'border-l-2 border-[var(--color-primary)]/20' : ''}`}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -315,6 +315,17 @@ const TimelineItem = ({ title, subtitle, date, details, icon, color, isLast }) =
 const Qualification = () => {
   const experiences = [
     {
+      title: "Junior QA Analyst",
+      subtitle: "Infaque Business Solutions (Pvt) Ltd.",
+      date: "July 2025 - December 2025",
+      details: [
+        "Performed manual testing of web applications including donation forms, subscriptions, campaigns, and events to ensure functional accuracy and usability.",
+        "Tested payment-related flows (one-time donations, recurring subscriptions, upgrades, cancellations) across multiple user journeys.",
+        "Executed test cases, test scenarios, and bug reports covering edge cases, validations, and regression testing."      ],
+      icon: <Briefcase size={14} />,
+      color: "#B784A7" // Mauve
+    },
+    {
       title: "Java Backend Intern",
       subtitle: "IATechSolutions",
       date: "July 2024 - August 2024",
@@ -357,14 +368,14 @@ const Qualification = () => {
   ];
 
   return (
-    <section id="qualification" className="relative py-20 bg-[var(--color-bg)] overflow-hidden">
+    <section id="qualification" className="relative py-8 bg-[var(--color-bg)] overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-accent)] bg-clip-text text-transparent mb-3">
             Qualifications

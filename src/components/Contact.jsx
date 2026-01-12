@@ -300,7 +300,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-28 bg-[var(--color-bg)] overflow-hidden">
+    <section id="contact" className="relative py-16 bg-[var(--color-bg)] overflow-hidden">
       {/* Background elements */}
       <motion.div 
         className="absolute top-1/4 -left-20 w-64 h-64 rounded-full bg-[var(--color-primary)]/10 blur-3xl -z-10"
@@ -321,7 +321,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
             Get In <span className="text-[var(--color-primary)]">Touch</span>

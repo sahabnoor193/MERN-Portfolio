@@ -166,14 +166,14 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-[#F5F2F9] dark:bg-[#161120]">
+    <section id="skills" className="py-12 bg-[#F5F2F9] dark:bg-[#161120]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#2D2643] dark:text-white mb-4">
             Technical <span className="text-[#9A94BC]">Expertise</span>

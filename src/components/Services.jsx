@@ -81,14 +81,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="relative py-28 bg-[var(--color-bg)]">
+    <section id="services" className="relative py-16 bg-[var(--color-bg)]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--color-text)] mb-4">
             My <span className="text-[var(--color-primary)]">Services</span>
